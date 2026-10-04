@@ -25,7 +25,8 @@
   <meta name="twitter:image" content="https://renzo-bello.github.io/reigstro-cargas-slab/og-image.png">
 
   <!-- PWA -->
-  <meta name="theme-color" content="#000000">
+  <meta name="theme-color" content="#0C1628">
+<meta name="description" content="Planifica tu rutina, registra tus series y consulta tu progreso con StrengthLab.">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="StrengthLab">
@@ -3054,8 +3055,8 @@ button:focus-visible,a:focus-visible,[role=button]:focus-visible,input:focus-vis
 @media(max-width:360px) { .rir-video-card { padding:18px; } .rir-guide-row { gap:8px; padding:14px 10px; grid-template-columns:34px minmax(0,1fr) 44px; } .rir-comparison { gap:12px; } .rir-comparison>div+div { padding-left:12px; } }
 
 /* Clinical system: all values scoped to this independent edition. */
-:root,body.light-mode { --dark:#000000;--dark-2:#000000;--card:#0C1628;--card-alt:#0C1628;--day-bg:#0C1628;--text:#EDF2FA;--text-mid:#A6B4CC;--text-dim:#A6B4CC;--border:#293B58;--border-hover:#A1BCE8;--gold:#A1BCE8;--gold-dim:#C1D4F2;--gold-glow:#192D4F;--num-white:#EDF2FA;--month-accent:#A1BCE8;--week-accent:#A1BCE8;--day-accent:#A1BCE8;--success:#88D8AE;--warning:#E7BC76;--amber:#E7BC76;--complete-bg:#192D4F;--complete-border:#88D8AE;--font-display:Inter,-apple-system,sans-serif;--font-body:Inter,-apple-system,sans-serif;--font-mono:Inter,-apple-system,sans-serif;--radius-sm:6px;--radius-md:6px;--radius-lg:6px;--radius-xl:6px;--shadow-card:0 2px 8px #EDF2FA06;--shadow-float:0 8px 24px #EDF2FA12; }
-html,body { background:#000000!important;color:#EDF2FA; }
+:root { --dark:#000000;--dark-2:#000000;--card:#0C1628;--card-alt:#0C1628;--day-bg:#0C1628;--text:#EDF2FA;--text-mid:#A6B4CC;--text-dim:#A6B4CC;--border:#293B58;--border-hover:#A1BCE8;--gold:#A1BCE8;--gold-dim:#C1D4F2;--gold-glow:#192D4F;--num-white:#EDF2FA;--month-accent:#A1BCE8;--week-accent:#A1BCE8;--day-accent:#A1BCE8;--success:#88D8AE;--warning:#E7BC76;--amber:#E7BC76;--complete-bg:#192D4F;--complete-border:#88D8AE;--font-display:Inter,-apple-system,sans-serif;--font-body:Inter,-apple-system,sans-serif;--font-mono:Inter,-apple-system,sans-serif;--radius-sm:6px;--radius-md:6px;--radius-lg:6px;--radius-xl:6px;--shadow-card:0 2px 8px #EDF2FA06;--shadow-float:0 8px 24px #EDF2FA12; }
+html,body { background:var(--dark)!important;color:var(--text); }
 body * { letter-spacing:normal!important; text-shadow:none!important; backdrop-filter:none!important; -webkit-backdrop-filter:none!important; background-image:none!important; }
 button,input,select,textarea { font-family:var(--font-body); border-radius:6px!important; }
 button,a[role=button],input,select { min-height:42px; }
@@ -3064,89 +3065,89 @@ button:disabled { opacity:.45;cursor:not-allowed; }
 button:active { transform:none!important; }
 button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { outline:2px solid #2B6EA6!important;outline-offset:3px; }
 #app { max-width:1120px;padding-top:0;padding-bottom:24px; }
-header.topbar,body.light-mode header.topbar { background:#0C1628!important;border-bottom:1px solid var(--border);padding:12px 20px; padding-top:calc(12px + env(safe-area-inset-top));box-shadow:none; }
+header.topbar,body.light-mode header.topbar { background:var(--card)!important;border-bottom:1px solid var(--border);padding:12px 20px; padding-top:calc(12px + env(safe-area-inset-top));box-shadow:none; }
 .topbar-left { order:-1; } header.topbar h1 { font-size:15px;text-transform:none; } header.topbar p { font-size:11px;text-transform:none; }
 .hamburger-btn span { background:var(--gold); } .hamburger-btn { border:1px solid var(--border); }
-nav.tabs { background:#0C1628; border-bottom:1px solid var(--border);padding:6px 16px;gap:4px; }
+nav.tabs { background:var(--card); border-bottom:1px solid var(--border);padding:6px 16px;gap:4px; }
 nav.tabs button { border:0!important;background:transparent;box-shadow:none!important;font-size:12px;flex:1; }
-nav.tabs button.active,nav.tabs #tab-recursos.active { background:#192D4F;color:#C1D4F2; }
+nav.tabs button.active,nav.tabs #tab-recursos.active { background:var(--gold-glow);color:var(--gold-dim); }
 .panel { padding:24px 20px; } #view-tecnica,#view-rir { max-width:1120px; }
 #view-rir { max-width:760px; } #view-registro { max-width:800px;margin:auto; }
-.training-intro,.drawer-theme-row { display:none!important; }
+
 .exercise-card,.tecnica-row,.recurso-card,.rir-video-card,.rir-distinction,.rir-guide-scale,.session-card,.day-strip { border-radius:6px!important;box-shadow:none!important; }
-.exercise-card,.session-card { background:#0C1628!important; }
-#view-registro .ex-head { background:#0C1628; } .day-btn.day-active .day-n,.day-btn.day-active .day-sub,#view-registro .day-btn.day-active { color:#0C1628!important; }
-#view-registro .add-exercise-btn,.btn-hoy.is-today { background:#A1BCE8;color:#0C1628; }
+.exercise-card,.session-card { background:var(--card)!important; }
+#view-registro .ex-head { background:var(--card); } .day-btn.day-active .day-n,.day-btn.day-active .day-sub,#view-registro .day-btn.day-active { color:var(--card)!important; }
+#view-registro .add-exercise-btn,.btn-hoy.is-today { background:var(--gold);color:var(--card); }
 #view-registro .ex-head-img,.tecnica-row-img { border-radius:6px;box-shadow:none; }
-#drawer,.welcome-sheet,.seg-dropdown,.tecnica-detail-sheet,.ex-inline-picker { background:#0C1628!important; }
+#drawer,.welcome-sheet,.seg-dropdown,.tecnica-detail-sheet,.ex-inline-picker { background:var(--card)!important; }
 #drawer { box-shadow:var(--shadow-float); }
 .seg-dropdown-item,.drawer-item,.tecnica-row { min-height:48px; }
-#onboardingScreen { background:#000000!important; } .ob-btn-primary,.welcome-cta { background:#A1BCE8!important;color:#0C1628!important; }
+#onboardingScreen { background:var(--dark)!important; } .ob-btn-primary,.welcome-cta { background:var(--gold)!important;color:var(--card)!important; }
 .ob-title,.welcome-logo,.rir-video-title,.recurso-title { font-family:var(--font-body);font-style:normal;font-weight:650; }
 .rir-video-title { font-size:25px; } .rir-video-title em { font-style:normal; }
-.rir-video-play { color:#0C1628; } .tecnica-detail-video-btn { background:#A1BCE8;color:#0C1628; }
-.tecnica-row-action.has-video { background:#192D4F;color:#A1BCE8; }
-#saveBar { max-width:1120px;background:#0C1628;color:#88D8AE;z-index:9500;pointer-events:none; }
+.rir-video-play { color:var(--card); } .tecnica-detail-video-btn { background:var(--gold);color:var(--card); }
+.tecnica-row-action.has-video { background:var(--gold-glow);color:var(--gold); }
+#saveBar { max-width:1120px;background:var(--card);color:var(--success);z-index:9500;pointer-events:none; }
 .cl-page-heading { display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:24px; }
 .cl-page-heading h1 { font-size:26px;line-height:1.25;margin:7px 0 0;font-weight:650; }
-.cl-eyebrow { font-size:12px;color:#A6B4CC;margin:0; }
-.cl-status { display:inline-flex;align-items:center;gap:5px;background:#192D4F;color:#C1D4F2;border-radius:4px;padding:5px 8px;font-size:11px;line-height:1.5; }
+.cl-eyebrow { font-size:12px;color:var(--text-dim);margin:0; }
+.cl-status { display:inline-flex;align-items:center;gap:5px;background:var(--gold-glow);color:var(--gold-dim);border-radius:4px;padding:5px 8px;font-size:11px;line-height:1.5; }
 .cl-metrics { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-bottom:24px; }
-.cl-metric { border:1px solid var(--border);border-radius:6px;background:#0C1628;padding:20px; }
-.cl-metric>span { font-size:12px;color:#A6B4CC;display:block; }
+.cl-metric { border:1px solid var(--border);border-radius:6px;background:var(--card);padding:20px; }
+.cl-metric>span { font-size:12px;color:var(--text-dim);display:block; }
 .cl-metric strong { display:block;font-size:28px;font-variant-numeric:tabular-nums;margin:12px 0 8px;line-height:1.1; }
-.cl-metric small { font-size:11px;color:#A6B4CC;line-height:1.5;display:block; }
+.cl-metric small { font-size:11px;color:var(--text-dim);line-height:1.5;display:block; }
 .cl-dashboard-grid { display:grid;grid-template-columns:minmax(0,2fr) minmax(260px,1fr);gap:24px; }
 .cl-main,.cl-side { display:flex;flex-direction:column;gap:20px;min-width:0; }
-.cl-surface { border:1px solid var(--border);border-radius:6px;background:#0C1628;padding:22px;box-shadow:0 2px 8px #EDF2FA04; }
+.cl-surface { border:1px solid var(--border);border-radius:6px;background:var(--card);padding:22px;box-shadow:0 2px 8px #EDF2FA04; }
 .cl-surface h2 { font-size:16px;font-weight:650;margin:0 0 16px; }
 .cl-section-head { display:flex;align-items:center;justify-content:space-between;gap:12px; }
 .cl-section-head h2 { margin:0;font-size:14px; }
-.cl-muted { font-size:12px;line-height:1.6;color:#A6B4CC; }
-.cl-empty { padding:28px 0;color:#A6B4CC;font-size:13px;line-height:1.7; }
-.cl-primary,.cl-secondary,.cl-tool,.cl-history-row { cursor:pointer;min-height:44px;padding:10px 14px;border:1px solid #293B58;background:#0C1628;color:#EDF2FA;font-size:13px;font-weight:550; }
-.cl-primary { background:#A1BCE8;border-color:#A1BCE8;color:#0C1628; }
-.cl-primary:hover:not(:disabled) { background:#C1D4F2; }
-.cl-secondary:hover:not(:disabled),.cl-tool:hover,.cl-history-row:hover { background:#192D4F; }
-.cl-primary:active { background:#C1D4F2; } .cl-full { width:100%;margin-top:18px; }
+.cl-muted { font-size:12px;line-height:1.6;color:var(--text-dim); }
+.cl-empty { padding:28px 0;color:var(--text-dim);font-size:13px;line-height:1.7; }
+.cl-primary,.cl-secondary,.cl-tool,.cl-history-row { cursor:pointer;min-height:44px;padding:10px 14px;border:1px solid var(--border);background:var(--card);color:var(--text);font-size:13px;font-weight:550; }
+.cl-primary { background:var(--gold);border-color:var(--gold);color:var(--card); }
+.cl-primary:hover:not(:disabled) { background:var(--gold-dim); }
+.cl-secondary:hover:not(:disabled),.cl-tool:hover,.cl-history-row:hover { background:var(--gold-glow); }
+.cl-primary:active { background:var(--gold-dim); } .cl-full { width:100%;margin-top:18px; }
 .cl-ex-summary { display:grid;grid-template-columns:28px 1fr auto;gap:10px;align-items:center;padding:15px 0;border-bottom:1px solid var(--border);font-size:13px; }
-.cl-index { color:#A6B4CC;font-variant-numeric:tabular-nums; }
+.cl-index { color:var(--text-dim);font-variant-numeric:tabular-nums; }
 .cl-history-row { display:flex;justify-content:space-between;align-items:center;width:100%;gap:8px;border:0;border-bottom:1px solid var(--border);border-radius:0!important;padding:13px 0;text-align:left;font-size:12px; }
 .cl-tool { display:flex;align-items:center;gap:10px;border:0;border-top:1px solid var(--border);width:100%;text-align:left;border-radius:0!important; }
-progress { width:100%;height:7px;border:0;border-radius:3px;appearance:none;background:#192D4F;accent-color:#A1BCE8; }
-progress::-webkit-progress-bar { background:#192D4F;border-radius:3px; } progress::-webkit-progress-value { background:#A1BCE8;border-radius:3px; }
+progress { width:100%;height:7px;border:0;border-radius:3px;appearance:none;background:var(--gold-glow);accent-color:var(--gold); }
+progress::-webkit-progress-bar { background:var(--gold-glow);border-radius:3px; } progress::-webkit-progress-value { background:var(--gold);border-radius:3px; }
 .cl-register-head { display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:20px; } .cl-register-head h2 { font-size:20px;margin:0; }
-#focusModeOverlay { background:#000000;z-index:9200;height:100dvh; }
-#focusHeader { background:#0C1628;gap:12px;min-height:64px;padding:10px max(16px,calc((100vw - 900px)/2)); }
+#focusModeOverlay { background:var(--dark);z-index:9200;height:100dvh; }
+#focusHeader { background:var(--card);gap:12px;min-height:64px;padding:10px max(16px,calc((100vw - 900px)/2)); }
 #focusExNum { font-size:12px; text-transform:none; }
 #focusCloseBtn { min-width:44px;min-height:44px;font-size:22px; }
-.cl-focus-progress { padding:8px 16px;background:#0C1628;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--border); }
+.cl-focus-progress { padding:8px 16px;background:var(--card);display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--border); }
 .cl-focus-progress progress { flex:1; } #clSessionCount { font-size:12px;white-space:nowrap; font-variant-numeric:tabular-nums; }
 #focusBody { display:block;padding:24px 20px;width:100%;max-width:900px;margin:auto;overscroll-behavior:contain; }
 .cl-focus-heading { display:flex;align-items:center;gap:18px;margin-bottom:24px; }
 .cl-focus-heading h1 { font-size:24px;margin:7px 0 12px;line-height:1.2; }
-.cl-focus-image,.cl-image-fallback { width:88px;height:88px;object-fit:contain;flex-shrink:0;border:1px solid var(--border);border-radius:6px;background:#0C1628; }
-.cl-image-fallback { display:grid;place-items:center;font-size:11px;color:#A6B4CC; }
+.cl-focus-image,.cl-image-fallback { width:88px;height:88px;object-fit:contain;flex-shrink:0;border:1px solid var(--border);border-radius:6px;background:var(--card); }
+.cl-image-fallback { display:grid;place-items:center;font-size:11px;color:var(--text-dim); }
 .cl-focus-fields { border:0;padding:0;margin:0;min-width:0; }
 .cl-focus-fields legend { font-size:13px;font-weight:650;padding:0 0 12px; }
 .cl-focus-set { padding:18px 0;border-top:1px solid var(--border); }
-.cl-focus-set.is-done { border-left:3px solid #88D8AE;padding-left:12px; }
+.cl-focus-set.is-done { border-left:3px solid var(--success);padding-left:12px; }
 .cl-input-grid { display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:16px 0; }
-.cl-field { min-width:0; } .cl-field-label { display:block;font-size:11px;color:#A6B4CC;margin-bottom:6px; }
-.cl-stepper { display:grid;grid-template-columns:42px minmax(0,1fr) 42px;background:#0C1628;border:1px solid var(--border);border-radius:6px;overflow:hidden; }
-.cl-stepper button { border:0;background:#0C1628;color:#A1BCE8;font-size:20px;padding:0;min-width:42px;min-height:44px; }
-.cl-stepper input { width:100%;min-width:0;border:0;background:#0C1628;color:#EDF2FA;text-align:center;font-size:18px!important;font-variant-numeric:tabular-nums; }
-.cl-stepper input[aria-invalid=true] { outline:2px solid #EF9B8D!important;outline-offset:-2px; }
-#focusFooter { background:#0C1628;border-top:1px solid var(--border);padding:10px max(16px,calc((100vw - 900px)/2));padding-bottom:calc(10px + env(safe-area-inset-bottom)); }
+.cl-field { min-width:0; } .cl-field-label { display:block;font-size:11px;color:var(--text-dim);margin-bottom:6px; }
+.cl-stepper { display:grid;grid-template-columns:42px minmax(0,1fr) 42px;background:var(--card);border:1px solid var(--border);border-radius:6px;overflow:hidden; }
+.cl-stepper button { border:0;background:var(--card);color:var(--gold);font-size:20px;padding:0;min-width:42px;min-height:44px; }
+.cl-stepper input { width:100%;min-width:0;border:0;background:var(--card);color:var(--text);text-align:center;font-size:18px!important;font-variant-numeric:tabular-nums; }
+.cl-stepper input[aria-invalid=true] { outline:2px solid var(--error)!important;outline-offset:-2px; }
+#focusFooter { background:var(--card);border-top:1px solid var(--border);padding:10px max(16px,calc((100vw - 900px)/2));padding-bottom:calc(10px + env(safe-area-inset-bottom)); }
 .cl-rest { display:flex;align-items:center;gap:10px;min-height:56px;margin-bottom:8px; }
 #clClock { font-size:26px;font-weight:650;font-variant-numeric:tabular-nums;min-width:78px; }
-#clClockState { font-size:11px;color:#A6B4CC;display:block; }
-.cl-rest select { background:#0C1628;color:#EDF2FA;border:1px solid var(--border);font-size:16px;min-width:72px; }
+#clClockState { font-size:11px;color:var(--text-dim);display:block; }
+.cl-rest select { background:var(--card);color:var(--text);border:1px solid var(--border);font-size:16px;min-width:72px; }
 .cl-rest button { padding:8px; }
 .cl-focus-nav { display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:8px; }
 .cl-focus-nav button { font-size:12px;padding:8px; }
 @media(max-width:700px) { .panel { padding:20px 12px; } .cl-page-heading { align-items:flex-start; } .cl-page-heading>.cl-status { display:none; } .cl-page-heading h1 { font-size:23px; } .cl-metrics { gap:8px; } .cl-metric { padding:12px 10px; } .cl-metric strong { font-size:20px; } .cl-metric small { font-size:10px; } .cl-dashboard-grid { grid-template-columns:1fr;gap:20px; } .cl-surface { padding:18px; } .cl-input-grid { grid-template-columns:repeat(2,minmax(0,1fr));gap:12px; } .cl-input-grid>.cl-field:last-child { grid-column:1/-1;max-width:220px; } .cl-focus-heading h1 { font-size:20px; } .cl-focus-image,.cl-image-fallback { width:64px;height:64px; } #focusBody { padding:18px 12px; } .cl-rest { gap:6px;flex-wrap:wrap; } .cl-rest>div { margin-right:auto; } #focusHeader { padding:10px 12px; } .cl-focus-set .cl-section-head { flex-wrap:wrap; } }
-@media(max-width:374px) { .cl-metrics { grid-template-columns:1fr;gap:0;border:1px solid var(--border);border-radius:6px;background:#0C1628; } .cl-metric { border:0;border-bottom:1px solid var(--border);border-radius:0;padding:12px 14px;display:grid;grid-template-columns:1fr auto;gap:5px; } .cl-metric strong { margin:0; } .cl-metric small { grid-column:1/-1; } nav.tabs { padding:6px; } nav.tabs button { font-size:11px;padding:8px 3px; } .cl-stepper { grid-template-columns:42px minmax(0,1fr) 42px; } .cl-focus-nav { grid-template-columns:1fr 1fr; } .cl-focus-nav #clFinish { grid-column:1/-1; } }
+@media(max-width:374px) { .cl-metrics { grid-template-columns:1fr;gap:0;border:1px solid var(--border);border-radius:6px;background:var(--card); } .cl-metric { border:0;border-bottom:1px solid var(--border);border-radius:0;padding:12px 14px;display:grid;grid-template-columns:1fr auto;gap:5px; } .cl-metric strong { margin:0; } .cl-metric small { grid-column:1/-1; } nav.tabs { padding:6px; } nav.tabs button { font-size:11px;padding:8px 3px; } .cl-stepper { grid-template-columns:42px minmax(0,1fr) 42px; } .cl-focus-nav { grid-template-columns:1fr 1fr; } .cl-focus-nav #clFinish { grid-column:1/-1; } }
 @media(prefers-reduced-motion:reduce) { * { transition:none!important;animation:none!important; } }
 
 
@@ -3155,8 +3156,8 @@ body * { box-shadow:none!important; }
 #app:has(#view-dashboard:not([style*="none"])) { padding-bottom:24px; }
 nav.tabs #tab-recursos { outline:none!important;box-shadow:none!important; }
 .cl-metric strong { overflow-wrap:anywhere; }
-#toast { background:#EDF2FA;color:#0C1628; }
-#restTimerBox { background:#0C1628; }
+#toast { background:var(--text);color:var(--card); }
+#restTimerBox { background:var(--card); }
 
 @media(max-width:600px) {
  #view-registro .series-hevy-header { display:none; }
@@ -3175,18 +3176,18 @@ nav.tabs #tab-recursos { outline:none!important;box-shadow:none!important; }
 .cl-editor-field { min-width:0;display:block; }
 .cl-editor-field>span { display:none; }
 .cl-editor-field input,.cl-editor-field select { width:100%; }
-@media(max-width:600px) { .cl-editor-field>span { display:block;font-size:10px;color:#A6B4CC;margin-bottom:5px; } }
+@media(max-width:600px) { .cl-editor-field>span { display:block;font-size:10px;color:var(--text-dim);margin-bottom:5px; } }
 
 .cl-confirm-backdrop { position:fixed;inset:0;background:#EDF2FA55;z-index:10000;display:grid;place-items:center;padding:20px; }
-.cl-confirm { background:#0C1628;border:1px solid #293B58;border-radius:6px;max-width:380px;padding:24px; }
+.cl-confirm { background:var(--card);border:1px solid var(--border);border-radius:6px;max-width:380px;padding:24px; }
 .cl-confirm h2 { font-size:20px;margin:0 0 12px; } .cl-confirm p { margin-bottom:20px; }
 .cl-confirm button { width:100%;margin-top:8px; }
 
 button { min-width:42px; }
-#toast { white-space:normal;line-height:1.5;background:#0C1628;color:#EDF2FA;border-color:#293B58; }
-#toast.toast-warn { color:#E7BC76;border-color:#E7BC76; }
-#toast.toast-error { color:#EF9B8D;border-color:#EF9B8D; }
-#toast.toast-ok { color:#88D8AE;border-color:#88D8AE; }
+#toast { white-space:normal;line-height:1.5;background:var(--card);color:var(--text);border-color:var(--border); }
+#toast.toast-warn { color:var(--warning);border-color:var(--warning); }
+#toast.toast-error { color:var(--error);border-color:var(--error); }
+#toast.toast-ok { color:var(--success);border-color:var(--success); }
 
 @media(max-width:700px) { nav.tabs button { flex:1 1 0;min-width:42px;padding-left:2px;padding-right:2px; } nav.tabs button svg { display:none; } }
 
@@ -3200,16 +3201,16 @@ button { min-width:42px; }
 
 
 /* Clinical Night — quiet contrast, stable geometry. */
-:root,body.light-mode { color-scheme:dark;--gold:#A1BCE8;--gold-dim:#C1D4F2;--gold-glow:#192D4F;--dark:#000000;--dark-2:#080E19;--card:#0C1628;--card-alt:#111E34;--text:#EDF2FA;--text-mid:#B6C3D8;--text-dim:#A6B4CC;--border:#293B58;--border-hover:#52719E;--records-accent:#A1BCE8;--records-accent-dim:#C1D4F2;--amber-dim:#E7BC76;--week-accent-dim:#C1D4F2;--day-accent-dim:#C1D4F2; }
-.cl-primary,.ob-btn-primary,.welcome-cta,.tecnica-detail-video-btn,#view-registro .add-exercise-btn,.btn-hoy.is-today { color:#EDF2FA!important;font-weight:650; }
-nav.tabs button { color:var(--text-mid); } nav.tabs button.active,nav.tabs #tab-recursos.active { color:var(--gold);background:#192D4F; }
+:root { color-scheme:dark;--gold:#A1BCE8;--gold-dim:#C1D4F2;--gold-glow:#192D4F;--dark:#000000;--dark-2:#080E19;--card:#0C1628;--card-alt:#111E34;--text:#EDF2FA;--text-mid:#B6C3D8;--text-dim:#A6B4CC;--border:#293B58;--border-hover:#52719E;--records-accent:#A1BCE8;--records-accent-dim:#C1D4F2;--amber-dim:#E7BC76;--week-accent-dim:#C1D4F2;--day-accent-dim:#C1D4F2; }
+.cl-primary,.ob-btn-primary,.welcome-cta,.tecnica-detail-video-btn,#view-registro .add-exercise-btn,.btn-hoy.is-today { color:var(--text)!important;font-weight:650; }
+nav.tabs button { color:var(--text-mid); } nav.tabs button.active,nav.tabs #tab-recursos.active { color:var(--gold);background:var(--gold-glow); }
 header.topbar h1,.cl-metric strong,.cl-page-heading h1,.cl-surface h2 { color:var(--text); }
-.cl-surface { box-shadow:none!important; } .cl-metric { border-top:2px solid #344F7B; }
+.cl-surface { box-shadow:none!important; } .cl-metric { border-top:2px solid var(--border-hover); }
 .cl-stepper input,.cl-stepper button,.cl-rest select,input,select,textarea { color:var(--text);background:var(--card-alt); }
 .cl-stepper button { color:var(--gold); }
 .cl-confirm-backdrop { background:rgba(0,0,0,.65); }
-#view-registro .day-btn.day-active { background:#192D4F!important; } #view-registro .day-btn.day-active,#view-registro .day-btn.day-active .day-n,#view-registro .day-btn.day-active .day-sub { color:#C1D4F2!important; }
-button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { outline-color:#B6CEFA!important; }
+#view-registro .day-btn.day-active { background:var(--gold-glow)!important; } #view-registro .day-btn.day-active,#view-registro .day-btn.day-active .day-n,#view-registro .day-btn.day-active .day-sub { color:var(--gold-dim)!important; }
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { outline-color:var(--focus)!important; }
 .cl-fact { border-left:3px solid var(--gold);min-width:0; }
 .cl-fact-top { display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px; }
 .cl-fact-kicker { font-size:11px;font-weight:650;color:var(--gold);text-transform:uppercase; }
@@ -3219,15 +3220,36 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { 
 .cl-fact-footer { display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:18px;border-top:1px solid var(--border);padding-top:12px; }
 .cl-fact-source { color:var(--text-mid);font-size:12px;min-height:44px;display:inline-flex;align-items:center;text-underline-offset:4px; }
 .cl-fact-next { color:var(--gold);background:transparent;border:1px solid var(--border);padding:8px 12px;font-size:12px;min-height:44px;cursor:pointer; }
-.cl-fact-next:hover { background:#192D4F; }
+.cl-fact-next:hover { background:var(--gold-glow); }
 @media(max-width:374px) { .cl-fact h2 { font-size:18px; } .cl-fact-copy { min-height:96px; } }
 
 
 /* Navy action hierarchy on a true black canvas. */
-.cl-primary,.ob-btn-primary,.welcome-cta,.tecnica-detail-video-btn,#view-registro .add-exercise-btn,.btn-hoy.is-today { background:#233F70!important;border-color:#45679A!important;color:#EDF2FA!important; }
-.cl-primary:hover:not(:disabled),.ob-btn-primary:hover,.welcome-cta:hover,.tecnica-detail-video-btn:hover,#view-registro .add-exercise-btn:hover { background:#2F5187!important; }
-.cl-primary:active { background:#1B3259!important; }
+.cl-primary,.ob-btn-primary,.welcome-cta,.tecnica-detail-video-btn,#view-registro .add-exercise-btn,.btn-hoy.is-today { background:var(--action-bg)!important;border-color:var(--action-border)!important;color:var(--text)!important; }
+.cl-primary:hover:not(:disabled),.ob-btn-primary:hover,.welcome-cta:hover,.tecnica-detail-video-btn:hover,#view-registro .add-exercise-btn:hover { background:var(--action-hover)!important; }
+.cl-primary:active { background:var(--action-active)!important; }
+
+/* Usability refinement: preserve the existing clinical palette. */
+#drawer .drawer-head { position:relative;padding-right:64px; }
+#drawerClose { position:absolute;right:12px;top:12px;width:44px;height:44px;background:transparent;border:1px solid var(--border);color:var(--text);cursor:pointer; }
+.cl-metric strong { overflow-wrap:anywhere; }
+.cl-surface { border-radius:12px!important; }
+.cl-page-heading { padding:8px 0; }
+.cl-primary { font-weight:650; }
+.cl-empty { padding:22px 0;max-width:52ch; }
+#toast { white-space:normal;overflow-wrap:anywhere; }
+.tecnica-search { min-height:48px; }
+@media (max-width:700px) {
+  nav.tabs { padding:6px 8px;gap:2px; }
+  nav.tabs button { min-width:0;min-height:48px;padding:8px 5px;font-size:11px; }
+  nav.tabs button svg { display:none; }
+  .cl-metric strong { font-size:clamp(19px,5vw,28px); }
+  .cl-surface { padding:18px; }
+}
+@media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+
 </style>
+<link rel="stylesheet" href="assets/themes.css">
 </head>
 <body>
 
@@ -3440,6 +3462,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { 
       <h1 id="pageTitle">STRENGTHLAB</h1>
       <p id="topbarSub">by @rennzolifts</p>
     </div>
+    <button class="theme-action" id="themeQuickToggle" type="button" aria-label="Activar modo claro">☀ Claro</button>
     <button class="btn-hoy" id="btnHoy" title="Ir al día de hoy">
       <span class="hoy-label">Hoy</span>
       <span class="hoy-date" id="btnHoyDate">—</span>
@@ -3450,14 +3473,15 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { 
   <div id="drawer-overlay"></div>
 
   <!-- DRAWER PANEL -->
-  <div id="drawer" role="dialog" aria-modal="true" aria-label="Menú principal">
-    <div class="drawer-head">
+  <div id="drawer" inert role="dialog" aria-modal="true" aria-label="Menú principal">
+    <div class="drawer-head"><button id="drawerClose" type="button" aria-label="Cerrar menú">✕</button>
       <div>
         <div class="drawer-logo">StrengthLab</div>
         <div class="drawer-sub">by @rennzolifts</div>
       </div>
     </div>
-    <nav class="drawer-nav">
+    <nav class="drawer-nav" aria-label="Navegación">
+      <button class="drawer-item" data-drawer-tab="tab-dashboard"><span class="drawer-icon" aria-hidden="true">⌂</span><span class="drawer-item-label">Inicio</span></button>
       <button class="drawer-item" data-drawer-tab="tab-registro">
         <span class="drawer-icon">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
@@ -3518,7 +3542,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { 
         </span>
         <span id="themeLabel">Modo oscuro</span>
       </div>
-      <div class="theme-toggle" id="themeToggle" role="switch" aria-checked="false" tabindex="0"></div>
+      <div class="theme-toggle" id="themeToggle" aria-label="Modo claro" role="switch" aria-checked="false" tabindex="0"></div>
     </div>
   </div>
 
@@ -3536,7 +3560,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { 
 <div id="view-registro" class="panel" style="display:none"><div class="cl-register-head"><h2>Tu rutina</h2><button id="clinicalStart" class="cl-primary">Entrenar</button></div>
     <section class="training-intro" aria-label="Tu entrenamiento">
       <div class="training-intro-top"><span class="eyebrow">Tu espacio de entrenamiento</span><span class="training-monogram" aria-hidden="true">SL</span></div>
-      <h2>El físico se construye.<br><em>Serie a serie.</em></h2>
+      <h2>El físico se construye<br><em>serie a serie, cada semana.</em></h2>
       <div class="training-signature"><span>PLAN PERSONALIZADO</span><span>by @rennzolifts</span></div>
     </section>
     <!-- Selector compacto Mes / Semana -->
@@ -3958,7 +3982,67 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { 
     </div>
   </div>
 
-  <div class="save-bar" id="saveBar" style="opacity:0;pointer-events:none;"></div>
+
+  <!-- ═══════════════════════════════════════
+       PANEL: TÉCNICA DE EJERCICIOS
+  ═══════════════════════════════════════ -->
+  <div id="view-tecnica" class="panel" style="display:none;">
+    <div class="tecnica-search-wrap">
+      <div class="tecnica-search-row">
+        <svg class="tecnica-search-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input id="tecnicaSearch" aria-label="Buscar por ejercicio o músculo" class="tecnica-search" type="text" placeholder="Buscar ejercicio..." autocomplete="off" autocorrect="off" inputmode="search"/>
+      </div>
+      <div class="tecnica-count" id="tecnicaCount" role="status" aria-live="polite"></div>
+    </div>
+    <div id="tecnicaList"></div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       MODAL: DETALLE DE TÉCNICA POR EJERCICIO
+  ═══════════════════════════════════════ -->
+  <div id="tecnicaDetailModal" class="tecnica-detail-modal" role="dialog" aria-modal="true" aria-labelledby="tecnicaDetailName">
+    <div class="tecnica-detail-sheet">
+      <button class="tecnica-detail-close" id="tecnicaDetailClose" type="button" aria-label="Cerrar">✕</button>
+      <div class="tecnica-detail-head">
+        <div class="tecnica-detail-img-wrap"><img id="tecnicaDetailImg" alt="" loading="lazy"><div id="tecnicaDetailImgFallback" class="tecnica-detail-img-fallback" hidden></div></div>
+        <div class="tecnica-detail-head-info">
+          <div class="tecnica-detail-name" id="tecnicaDetailName"></div>
+          <div class="tecnica-detail-muscle" id="tecnicaDetailMuscle"></div>
+        </div>
+      </div>
+      <div class="tecnica-detail-body">
+        <div class="tecnica-detail-section">
+          <div class="tecnica-detail-section-title errores">Errores frecuentes</div>
+          <ul class="tecnica-detail-list" id="tecnicaDetailErrores"></ul>
+        </div>
+        <div class="tecnica-detail-section">
+          <div class="tecnica-detail-section-title tips">Tips</div>
+          <ul class="tecnica-detail-list" id="tecnicaDetailTips"></ul>
+        </div>
+      </div>
+      <a id="tecnicaDetailVideo" class="tecnica-detail-video-btn" target="_blank" rel="noopener noreferrer">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+        Ver video de técnica
+      </a>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════
+       PANEL: SOBRE RIR
+  ═══════════════════════════════════════ -->
+  <div id="view-rir" class="panel" style="display:none;">
+    <a class="rir-video-card" href="https://youtube.com/shorts/DDsx0NaF9gE" target="_blank" rel="noopener noreferrer" aria-label="Ver explicación de RIR de @rennzolifts en YouTube, abre en otra pestaña">
+      <span class="rir-video-top"><span class="rir-guide-kicker">LA GUÍA DE TU COACH</span><span class="rir-info-badge">INFO</span></span>
+      <span class="rir-video-title">RIR: Mide la intensidad<br><em>de tu serie.</em></span>
+      <span class="rir-video-bottom"><span class="rir-video-play" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><span><strong>Haz clic para ver el video explicativo</strong><small>@rennzolifts · YouTube</small></span><span class="rir-video-arrow" aria-hidden="true">↗</span></span>
+    </a>
+    <section class="rir-guide-intro" aria-labelledby="rir-guide-heading"><span class="rir-guide-kicker">ENTRENA CON CRITERIO</span><h2 id="rir-guide-heading">¿Qué es el RIR?</h2><p>RIR significa <strong>repeticiones en reserva</strong>: cuántas repeticiones más podrías completar al terminar una serie, manteniendo una buena técnica.</p></section>
+    <section aria-labelledby="rir-scale-heading"><div class="rir-section-heading"><h3 id="rir-scale-heading">Tu escala de esfuerzo</h3><span>RIR 4 → 0</span></div><div class="rir-guide-scale"><div class="rir-guide-row"><span class="rir-guide-value"><small>RIR</small>4</span><div><strong>4 repeticiones en reserva</strong><p>Podrías completar 4 repeticiones más con buena técnica.</p></div><span class="rir-guide-rpe">RPE 6</span></div><div class="rir-guide-row"><span class="rir-guide-value"><small>RIR</small>3</span><div><strong>3 repeticiones en reserva</strong><p>Podrías completar 3 repeticiones más con buena técnica.</p></div><span class="rir-guide-rpe">RPE 7</span></div><div class="rir-guide-row"><span class="rir-guide-value"><small>RIR</small>2</span><div><strong>2 repeticiones en reserva</strong><p>Podrías completar 2 repeticiones más con buena técnica.</p></div><span class="rir-guide-rpe">RPE 8</span></div><div class="rir-guide-row"><span class="rir-guide-value"><small>RIR</small>1</span><div><strong>1 repetición en reserva</strong><p>Podrías completar 1 repetición más con buena técnica.</p></div><span class="rir-guide-rpe">RPE 9</span></div><div class="rir-guide-row"><span class="rir-guide-value"><small>RIR</small>0</span><div><strong>Sin repeticiones en reserva</strong><p>Completas la última repetición posible con buena técnica.</p></div><span class="rir-guide-rpe">RPE 10</span></div></div><p class="rir-scale-note">A menor RIR, menos repeticiones en reserva. El RPE expresa ese esfuerzo en la escala inversa.</p></section>
+    <section class="rir-distinction" aria-labelledby="rir-zero-heading"><span class="rir-guide-kicker">LA DIFERENCIA IMPORTANTE</span><h3 id="rir-zero-heading">RIR 0 ≠ fallo</h3><div class="rir-comparison"><div><span>RIR 0</span><p>Terminas la última repetición. Estimas que no podrías completar otra con buena técnica.</p></div><div><span>FALLO</span><p>Intentas una repetición adicional y no logras completarla.</p></div></div></section>
+    <div class="rir-guide-footer"><span aria-hidden="true">↳</span><p><strong>Llévalo a tu entrenamiento.</strong> Cambia entre RPE y RIR desde “Modo intensidad” en cada ejercicio y sigue el objetivo de tu rutina.</p></div>
+  </div>
+
+  <div class="save-bar" id="saveBar" role="status" aria-live="polite" style="opacity:0;pointer-events:none;"></div>
 
   <div id="exImgModal">
     <img id="exImgModalImg" src="" alt="">
@@ -4362,6 +4446,8 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { 
   var START_KEY = 'slab-start-date';
   var _startDateStr = null;
 
+  function localDateISO(date) { return date.getFullYear() + '-' + String(date.getMonth()+1).padStart(2,'0') + '-' + String(date.getDate()).padStart(2,'0'); }
+
   async function loadStartDate() {
     var stored = await slabGetItem(START_KEY);
     if (stored && typeof stored === 'string') {
@@ -4374,7 +4460,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { 
     var monday = new Date(now);
     monday.setDate(now.getDate() + diff);
     monday.setHours(0,0,0,0);
-    _startDateStr = monday.toISOString().slice(0,10);
+    _startDateStr = localDateISO(monday);
     slabSetItem(START_KEY, _startDateStr);
   }
 
@@ -4406,7 +4492,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { 
 
   function renderStartDateConfig() {
     var start = getStartDate();
-    document.getElementById('startDateInput').value = start.toISOString().slice(0,10);
+    document.getElementById('startDateInput').value = localDateISO(start);
     document.getElementById('startDateCurrent').textContent = 'Inicio actual: ' + formatDateDisplay(start);
   }
 
@@ -5916,6 +6002,13 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { 
      GRÁFICAS DE PROGRESO (Chart.js)
   ══════════════════════════════════════ */
   var _charts = {};
+  document.addEventListener('slab-theme-change',function(){
+    Object.keys(_charts).forEach(function(key){
+      var chart=_charts[key],base=chartBaseOptions();
+      ['x','y'].forEach(function(axis){var scale=chart.options.scales[axis];if(scale){scale.grid.color=base.scales[axis].grid.color;scale.ticks.color=base.scales[axis].ticks.color;if(scale.title)scale.title.color=base.scales[axis].ticks.color;}});
+      Object.assign(chart.options.plugins.tooltip,base.plugins.tooltip);chart.update('none');
+    });
+  });
 
   function destroyChart(id) {
     if (_charts[id]) { _charts[id].destroy(); delete _charts[id]; }
@@ -5929,17 +6022,20 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { 
   };
 
   function chartBaseOptions(yLabel) {
+    var palette=getComputedStyle(document.body);
+    CHART_DEFAULTS.textColor=palette.getPropertyValue('--text-mid').trim();
+    CHART_DEFAULTS.gridColor=palette.getPropertyValue('--border').trim();
     return {
       responsive: true,
       maintainAspectRatio: false,
       plugins: {
         legend: { display: false },
         tooltip: {
-          backgroundColor: '#171717',
-          borderColor: '#C9A96E',
+          backgroundColor: palette.getPropertyValue('--card').trim(),
+          borderColor: palette.getPropertyValue('--border').trim(),
           borderWidth: 1,
-          titleColor: '#C9A96E',
-          bodyColor: '#F5F0E8',
+          titleColor: palette.getPropertyValue('--gold').trim(),
+          bodyColor: palette.getPropertyValue('--text').trim(),
           titleFont: { family: 'DM Mono', size: 10 },
           bodyFont: { family: 'DM Mono', size: 11 }
         }
@@ -6942,14 +7038,15 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { 
       var q = _query.toLowerCase().trim();
       var items = db.filter(function(e) {
         var mg = _filter === 'Todos' || e.musculo === _filter;
-        var mq = !q || e.nombre.toLowerCase().includes(q) || e.musculo.toLowerCase().includes(q);
+        var mq = !q || searchText(e.nombre).includes(q) || searchText(e.musculo).includes(q);
         return mg && mq;
       });
 
       if (!items.length) {
         var empty = document.createElement('div');
         empty.className = 'ex-inline-empty';
-        empty.textContent = 'Sin resultados';
+        empty.textContent = 'No encontramos ese ejercicio. Prueba con otro nombre o un músculo.';
+      document.getElementById('tecnicaCount').textContent = '0 ejercicios';
         listEl.appendChild(empty);
         return;
       }
@@ -7666,12 +7763,16 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { 
   function clRenderFact(host){
     var list=clFactList();if(!list.length){host.hidden=true;return;}host.hidden=false;host.replaceChildren();
     var now=new Date(),day=Math.floor(Date.UTC(now.getFullYear(),now.getMonth(),now.getDate())/86400000);
-    var f=list[(day+clFactOffset)%list.length];
+    var index=((day+clFactOffset)%list.length+list.length)%list.length, f=list[index];
     var top=ce('div','cl-fact-top');top.append(ce('span','cl-fact-kicker','¿Sabías que?'),ce('span','cl-fact-category',f.category||'Tu cuerpo'));
-    var content=ce('div');content.setAttribute('aria-live','polite');content.setAttribute('aria-atomic','true');content.append(ce('h2','',f.title),ce('p','cl-fact-copy',f.text));
-    var footer=ce('div','cl-fact-footer'),link=ce('a','cl-fact-source',f.sourceLabel||'Ver fuente');link.href=f.source;link.target='_blank';link.rel='noopener noreferrer';
-    var next=clinicalButton('Ver otro →',function(){clFactOffset++;clRenderFact(host);host.querySelector('button').focus();},'cl-fact-next');next.disabled=list.length<2;
-    footer.append(link,next);host.append(top,content,footer);
+    var content=ce('div','cl-fact-content');content.setAttribute('aria-live','polite');content.setAttribute('aria-atomic','true');
+    content.append(ce('h2','',f.title),ce('p','cl-fact-copy',f.text));
+    var link=ce('a','cl-fact-source',f.sourceLabel||'Ver fuente');link.href=f.source;link.target='_blank';link.rel='noopener noreferrer';content.append(link);
+    var footer=ce('div','cl-fact-footer'),counter=ce('span','cl-fact-counter',(index+1)+' / '+list.length);
+    function move(delta,which){clFactOffset+=delta;clRenderFact(host);host.querySelectorAll('button')[which].focus();}
+    var prev=clinicalButton('←',function(){move(-1,0);},'cl-fact-next');prev.setAttribute('aria-label','Dato anterior');
+    var next=clinicalButton('→',function(){move(1,1);},'cl-fact-next');next.setAttribute('aria-label','Siguiente dato');
+    prev.disabled=next.disabled=list.length<2;footer.append(prev,counter,next);host.append(top,content,footer);
   }
   /* Clinical dashboard and focused logger. Uses the existing storage schema. */
   var clinicalActive = false, clinicalPaused = false, clinicalIdx = 0, clinicalLastFocus = null;
@@ -7679,7 +7780,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { 
   function ce(tag, cls, text) { var e=document.createElement(tag); if(cls)e.className=cls; if(text!==undefined)e.textContent=text; return e; }
   function clinicalButton(text, fn, cls) { var b=ce('button',cls||'cl-secondary',text); b.type='button'; b.onclick=fn; return b; }
   function clNumber(v) { return Number(String(v||'0').replace(',','.'))||0; }
-  function clDate(m,w,d) { var date=new Date((_startDateStr||new Date().toISOString().slice(0,10))+'T12:00:00'); date.setDate(date.getDate()+((m-1)*4+w-1)*7+d-1); return date; }
+  function clDate(m,w,d) { var date=new Date((_startDateStr||localDateISO(new Date()))+'T12:00:00'); date.setDate(date.getDate()+((m-1)*4+w-1)*7+d-1); return date; }
   function clDays() { var out=[]; for(var m=1;m<=3;m++)for(var w=1;w<=4;w++)for(var d=1;d<=5;d++){var arr=(STATE.data[dayKey(m,w,d)]||[]).filter(function(e){return e.nombre&&e.nombre.trim();});if(arr.length)out.push({m:m,w:w,d:d,date:clDate(m,w,d),ex:arr});}return out; }
   function clStats(arr) { var all=0,done=0,volume=0;arr.forEach(function(e){(e.series||[]).forEach(function(s){all++;if(s.done){done++;volume+=clNumber(s.peso)*clNumber(s.reps);}});});return {all:all,done:done,volume:volume,complete:all>0&&all===done}; }
   function clSelect(day) { STATE.month=day.m;STATE.week=day.w;STATE.day=day.d;renderAll(); }
@@ -7695,13 +7796,13 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { 
     var metrics=ce('div','cl-metrics');[['Progreso semanal',complete+' / '+week.length,'Sesiones completadas esta semana'],['Adherencia',due.length?Math.round(dueDone/due.length*100)+'%':'—','Sesiones completadas / programadas hasta hoy'],['Volumen acumulado',volume.toLocaleString('es')+' kg','Peso × repeticiones de series completadas']].forEach(function(a){var item=ce('section','cl-metric');item.append(ce('span','',a[0]),ce('strong','',a[1]),ce('small','',a[2]));metrics.append(item);});root.append(metrics);
     var grid=ce('div','cl-dashboard-grid'),main=ce('div','cl-main'),side=ce('aside','cl-side');grid.append(main,side);root.append(grid);
     var session=ce('section','cl-surface');var sh=ce('div','cl-section-head');sh.append(ce('h2','','Entrenamiento de hoy'),ce('span','cl-status',current?(clStats(current.ex).complete?'Completado':'Programado'):'Sin sesión'));session.append(sh);
-    if(current){var stats=clStats(current.ex);session.append(ce('p','cl-muted',current.ex.length+' ejercicios · '+stats.all+' series programadas'));var list=ce('div','cl-session-list');current.ex.forEach(function(ex,i){var row=ce('div','cl-ex-summary');row.append(ce('span','cl-index',String(i+1).padStart(2,'0')),ce('strong','',ex.nombre),ce('span','cl-muted',(ex.series||[]).length+((ex.series||[]).length===1?' serie':' series')));list.append(row);});session.append(list,clinicalButton(stats.complete?'Revisar entrenamiento':'Comenzar entrenamiento',function(){clSelect(current);openFocusMode(0);},'cl-primary cl-full'));}
-    else {session.append(ce('div','cl-empty','No hay ejercicios programados para hoy.'),clinicalButton('Preparar entrenamiento',function(){if(pos){STATE.month=pos.month;STATE.week=pos.week;STATE.day=pos.day;}renderAll();switchTab('registro');},'cl-primary cl-full'));}main.append(session);
+    if(current){var stats=clStats(current.ex);session.append(ce('p','cl-muted',current.ex.length+' ejercicios · '+stats.all+' series programadas'));var list=ce('div','cl-session-list');current.ex.forEach(function(ex,i){var row=ce('div','cl-ex-summary');row.append(ce('span','cl-index',String(i+1).padStart(2,'0')),ce('strong','',ex.nombre),ce('span','cl-muted',(ex.series||[]).length+((ex.series||[]).length===1?' serie':' series')));list.append(row);});session.append(list,clinicalButton(stats.complete?'Revisar entrenamiento':stats.done?'Continuar entrenamiento':'Comenzar entrenamiento',function(){clSelect(current);openFocusMode(0);},'cl-primary cl-full'));}
+    else {session.append(ce('div','cl-empty',days.length?'Hoy no tienes una sesión programada. Puedes revisar tu próxima rutina o preparar otra sesión.':'Comienza creando tu primera rutina. Añade ejercicios y series; después podrás registrar cada entrenamiento aquí.'),clinicalButton(days.length?'Preparar entrenamiento':'Crear mi primera rutina',function(){if(pos){STATE.month=pos.month;STATE.week=pos.week;STATE.day=pos.day;}renderAll();switchTab('registro');},'cl-primary cl-full'));}main.append(session);
     var history=ce('section','cl-surface');history.append(ce('h2','','Historial reciente'),ce('p','cl-muted','Fecha programada · series registradas'));var recent=days.filter(function(d){return clStats(d.ex).done>0;}).slice().reverse().slice(0,5);if(!recent.length)history.append(ce('p','cl-empty','Aún no hay series registradas.'));
     recent.forEach(function(day){var st=clStats(day.ex);var b=clinicalButton('',function(){clSelect(day);switchTab('registro');},'cl-history-row');b.append(ce('span','',day.date.toLocaleDateString('es',{day:'numeric',month:'short'})),ce('strong','',st.done+' / '+st.all+' series'),ce('span','cl-status',st.complete?'Completado':'En curso'));history.append(b);});main.append(history);
-    var weekly=ce('section','cl-surface');weekly.append(ce('h2','','Esta semana'));var progress=ce('progress');progress.max=week.length||1;progress.value=complete;progress.setAttribute('aria-label','Sesiones completadas esta semana');weekly.append(progress,ce('p','cl-muted',complete+' de '+week.length+' sesiones completadas'));side.append(weekly);
+    var weekly=ce('section','cl-surface');weekly.append(ce('h2','','Esta semana'));var progress=ce('progress');progress.max=week.length||1;progress.value=complete;progress.setAttribute('aria-label','Sesiones completadas esta semana');weekly.append(progress,ce('p','cl-muted',week.length?complete+' de '+week.length+' sesiones completadas':'Todavía no hay sesiones programadas esta semana'));side.append(weekly);
     var upcoming=ce('section','cl-surface');upcoming.append(ce('h2','','Próxima sesión'));if(next){upcoming.append(ce('strong','',next.date.toLocaleDateString('es',{weekday:'long',day:'numeric',month:'short'})),ce('p','cl-muted',next.ex.map(function(e){return e.nombre;}).join(' · ')),clinicalButton('Ver rutina',function(){clSelect(next);switchTab('registro');}));}else upcoming.append(ce('p','cl-muted','No hay una próxima sesión programada.'));side.append(upcoming);
-    var fact=ce('section','cl-surface cl-fact');fact.setAttribute('aria-label','Datos sobre tu cuerpo');side.prepend(fact);clRenderFact(fact);
+    var fact=ce('section','cl-surface cl-fact');fact.setAttribute('aria-label','Datos sobre tu cuerpo');root.insertBefore(fact,grid);clRenderFact(fact);
     var tools=ce('section','cl-surface');tools.append(ce('h2','','Herramientas'));[['Técnica','tecnica'],['Calculadora RPE','rpe'],['Sobre RIR','rir']].forEach(function(a){var b=clinicalButton(a[0],function(){switchTab(a[1]);},'cl-tool');var icon=a[1]==='tecnica'?'<rect x="3" y="3" width="18" height="18" rx="2"/><path d="m10 8 6 4-6 4z"/>':a[1]==='rpe'?'<rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 10h2m4 0h2M8 14h2m4 0h2M8 18h2m4 0h2"/>':'<circle cx="12" cy="12" r="10"/><path d="M12 16v-4m0-4h.01"/>';b.insertAdjacentHTML('afterbegin','<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'+icon+'</svg>');tools.append(b);});side.append(tools);
   }
   document.getElementById('tab-dashboard').onclick=function(){switchTab('dashboard');};
@@ -7766,19 +7867,21 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { 
     if (!list) return;
     list.innerHTML = '';
 
-    var q = (filter || '').toLowerCase().trim();
+    function searchText(value) { return String(value || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim(); }
+    var q = searchText(filter);
     var _db = typeof EXERCISE_DB !== 'undefined' ? EXERCISE_DB : [];
 
     var ejercicios = q
       ? _db.filter(function(e) {
-          return e.nombre.toLowerCase().includes(q) || e.musculo.toLowerCase().includes(q);
+          return searchText(e.nombre).includes(q) || searchText(e.musculo).includes(q);
         })
       : _db;
 
     if (ejercicios.length === 0) {
       var empty = document.createElement('div');
       empty.className = 'tecnica-empty';
-      empty.textContent = 'Sin resultados';
+      empty.textContent = 'No encontramos ese ejercicio. Prueba con otro nombre o un músculo.';
+      document.getElementById('tecnicaCount').textContent = '0 ejercicios';
       list.appendChild(empty);
       return;
     }
@@ -7899,7 +8002,9 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { 
   };
 
   // Modal de detalle: foto, músculos, errores frecuentes y tips
+  var tecnicaPreviousFocus = null;
   function openTecnicaDetail(ex) {
+    tecnicaPreviousFocus = document.activeElement;
     var modal = document.getElementById('tecnicaDetailModal');
     if (!modal) return;
     var img = document.getElementById('tecnicaDetailImg');
@@ -7942,15 +8047,26 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { 
     }
 
     modal.classList.add('open');
+    document.getElementById('tecnicaDetailClose').focus();
   }
   function closeTecnicaDetail() {
     var modal = document.getElementById('tecnicaDetailModal');
     if (modal) modal.classList.remove('open');
+    if (tecnicaPreviousFocus) tecnicaPreviousFocus.focus();
   }
   document.addEventListener('DOMContentLoaded', function() {
     var closeBtn = document.getElementById('tecnicaDetailClose');
     var modal = document.getElementById('tecnicaDetailModal');
     if (closeBtn) closeBtn.onclick = closeTecnicaDetail;
+    if (modal) modal.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') { e.stopPropagation(); closeTecnicaDetail(); }
+      if (e.key === 'Tab') {
+        var items = Array.from(modal.querySelectorAll('button, a[href]')).filter(function(el) { return el.getClientRects().length; });
+        var first = items[0], last = items[items.length - 1];
+        if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+      }
+    });
     if (modal) modal.addEventListener('click', function(e) { if (e.target === modal) closeTecnicaDetail(); });
   });
 
@@ -8047,6 +8163,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { 
   var _scrollY = 0;
   function openDrawer() {
     _scrollY = window.scrollY;
+    drawer.inert = false;
     drawer.classList.add('open');
     overlay.classList.add('open');
     hamburger.classList.add('is-open');
@@ -8055,8 +8172,10 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { 
     document.body.style.top = '-' + _scrollY + 'px';
     document.body.style.width = '100%';
     syncDrawerActive();
+    document.getElementById('drawerClose').focus();
   }
   function closeDrawer() {
+    if (!drawer.classList.contains('open')) return;
     drawer.classList.remove('open');
     overlay.classList.remove('open');
     hamburger.classList.remove('is-open');
@@ -8065,11 +8184,21 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { 
     document.body.style.top = '';
     document.body.style.width = '';
     window.scrollTo(0, _scrollY);
+    hamburger.focus();
+    drawer.inert = true;
   }
   function toggleDrawer() {
     drawer.classList.contains('open') ? closeDrawer() : openDrawer();
   }
 
+  document.getElementById('drawerClose').addEventListener('click', closeDrawer);
+  drawer.addEventListener('keydown', function(e) {
+    if (e.key !== 'Tab') return;
+    var items = Array.from(drawer.querySelectorAll('button, [tabindex="0"]')).filter(function(el) { return !el.disabled && el.getClientRects().length; });
+    var first = items[0], last = items[items.length - 1];
+    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  });
   hamburger.addEventListener('click', toggleDrawer);
   overlay.addEventListener('click', closeDrawer);
   document.addEventListener('keydown', function(e) {
@@ -8109,7 +8238,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { 
   });
 
   // ── Sincronizar ítem activo del drawer con tab actual ──
-  var _currentTab = 'registro';
+  var _currentTab = 'dashboard';
   function syncDrawerActive(tabName) {
     if (tabName) _currentTab = tabName;
     var activeId = 'tab-' + _currentTab;
@@ -8135,11 +8264,18 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { 
   // ── Tema claro / oscuro ──
   function applyTheme(isLight) {
     document.body.classList.toggle('light-mode', isLight);
+    document.documentElement.classList.toggle('light-mode', isLight);
+    var quick = document.getElementById('themeQuickToggle');
+    quick.textContent = isLight ? '☾ Oscuro' : '☀ Claro';
+    quick.setAttribute('aria-label', isLight ? 'Activar modo oscuro' : 'Activar modo claro');
+    document.querySelector('meta[name="theme-color"]').content = isLight ? '#F4F6FA' : '#0C1628';
+    document.dispatchEvent(new Event('slab-theme-change'));
     themeToggle.setAttribute('aria-checked', isLight ? 'true' : 'false');
     themeLabel.textContent = isLight ? 'Modo claro' : 'Modo oscuro';
     themeIcon.textContent  = isLight ? '☀️' : '🌙';
     try { localStorage.setItem('slab_theme', isLight ? 'light' : 'dark'); } catch(e) {}
   }
+  document.getElementById('themeQuickToggle').addEventListener('click', function() { applyTheme(!document.body.classList.contains('light-mode')); });
   themeToggle.addEventListener('click', function() {
     applyTheme(!document.body.classList.contains('light-mode'));
   });
@@ -8150,67 +8286,11 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { 
   try {
     var saved = localStorage.getItem('slab_theme');
     if (saved === 'light') applyTheme(true);
-    else if (!saved && window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) applyTheme(true);
+    else applyTheme(!saved && window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches);
   } catch(e) {}
 })();
 </script>
+
+
 </body>
 </html>
-  <!-- ═══════════════════════════════════════
-       PANEL: TÉCNICA DE EJERCICIOS
-  ═══════════════════════════════════════ -->
-  <div id="view-tecnica" class="panel" style="display:none;">
-    <div class="tecnica-search-wrap">
-      <div class="tecnica-search-row">
-        <svg class="tecnica-search-icon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-        <input id="tecnicaSearch" class="tecnica-search" type="text" placeholder="Buscar ejercicio..." autocomplete="off" autocorrect="off" inputmode="search"/>
-      </div>
-      <div class="tecnica-count" id="tecnicaCount"></div>
-    </div>
-    <div id="tecnicaList"></div>
-  </div>
-
-  <!-- ═══════════════════════════════════════
-       MODAL: DETALLE DE TÉCNICA POR EJERCICIO
-  ═══════════════════════════════════════ -->
-  <div id="tecnicaDetailModal" class="tecnica-detail-modal">
-    <div class="tecnica-detail-sheet">
-      <button class="tecnica-detail-close" id="tecnicaDetailClose" type="button" aria-label="Cerrar">✕</button>
-      <div class="tecnica-detail-head">
-        <div class="tecnica-detail-img-wrap"><img id="tecnicaDetailImg" alt="" loading="lazy"><div id="tecnicaDetailImgFallback" class="tecnica-detail-img-fallback" hidden></div></div>
-        <div class="tecnica-detail-head-info">
-          <div class="tecnica-detail-name" id="tecnicaDetailName"></div>
-          <div class="tecnica-detail-muscle" id="tecnicaDetailMuscle"></div>
-        </div>
-      </div>
-      <div class="tecnica-detail-body">
-        <div class="tecnica-detail-section">
-          <div class="tecnica-detail-section-title errores">Errores frecuentes</div>
-          <ul class="tecnica-detail-list" id="tecnicaDetailErrores"></ul>
-        </div>
-        <div class="tecnica-detail-section">
-          <div class="tecnica-detail-section-title tips">Tips</div>
-          <ul class="tecnica-detail-list" id="tecnicaDetailTips"></ul>
-        </div>
-      </div>
-      <a id="tecnicaDetailVideo" class="tecnica-detail-video-btn" target="_blank" rel="noopener noreferrer">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
-        Ver video de técnica
-      </a>
-    </div>
-  </div>
-
-  <!-- ═══════════════════════════════════════
-       PANEL: SOBRE RIR
-  ═══════════════════════════════════════ -->
-  <div id="view-rir" class="panel" style="display:none;">
-    <a class="rir-video-card" href="https://youtube.com/shorts/DDsx0NaF9gE" target="_blank" rel="noopener noreferrer" aria-label="Ver explicación de RIR de @rennzolifts en YouTube, abre en otra pestaña">
-      <span class="rir-video-top"><span class="rir-guide-kicker">LA GUÍA DE TU COACH</span><span class="rir-info-badge">INFO</span></span>
-      <span class="rir-video-title">RIR: Mide la intensidad<br><em>de tu serie.</em></span>
-      <span class="rir-video-bottom"><span class="rir-video-play" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span><span><strong>Haz clic para ver el video explicativo</strong><small>@rennzolifts · YouTube</small></span><span class="rir-video-arrow" aria-hidden="true">↗</span></span>
-    </a>
-    <section class="rir-guide-intro" aria-labelledby="rir-guide-heading"><span class="rir-guide-kicker">ENTRENA CON CRITERIO</span><h2 id="rir-guide-heading">¿Qué es el RIR?</h2><p>RIR significa <strong>repeticiones en reserva</strong>: cuántas repeticiones más podrías completar al terminar una serie, manteniendo una buena técnica.</p></section>
-    <section aria-labelledby="rir-scale-heading"><div class="rir-section-heading"><h3 id="rir-scale-heading">Tu escala de esfuerzo</h3><span>RIR 4 → 0</span></div><div class="rir-guide-scale"><div class="rir-guide-row"><span class="rir-guide-value"><small>RIR</small>4</span><div><strong>4 repeticiones en reserva</strong><p>Podrías completar 4 repeticiones más con buena técnica.</p></div><span class="rir-guide-rpe">RPE 6</span></div><div class="rir-guide-row"><span class="rir-guide-value"><small>RIR</small>3</span><div><strong>3 repeticiones en reserva</strong><p>Podrías completar 3 repeticiones más con buena técnica.</p></div><span class="rir-guide-rpe">RPE 7</span></div><div class="rir-guide-row"><span class="rir-guide-value"><small>RIR</small>2</span><div><strong>2 repeticiones en reserva</strong><p>Podrías completar 2 repeticiones más con buena técnica.</p></div><span class="rir-guide-rpe">RPE 8</span></div><div class="rir-guide-row"><span class="rir-guide-value"><small>RIR</small>1</span><div><strong>1 repetición en reserva</strong><p>Podrías completar 1 repetición más con buena técnica.</p></div><span class="rir-guide-rpe">RPE 9</span></div><div class="rir-guide-row"><span class="rir-guide-value"><small>RIR</small>0</span><div><strong>Sin repeticiones en reserva</strong><p>Completas la última repetición posible con buena técnica.</p></div><span class="rir-guide-rpe">RPE 10</span></div></div><p class="rir-scale-note">A menor RIR, menos repeticiones en reserva. El RPE expresa ese esfuerzo en la escala inversa.</p></section>
-    <section class="rir-distinction" aria-labelledby="rir-zero-heading"><span class="rir-guide-kicker">LA DIFERENCIA IMPORTANTE</span><h3 id="rir-zero-heading">RIR 0 ≠ fallo</h3><div class="rir-comparison"><div><span>RIR 0</span><p>Terminas la última repetición. Estimas que no podrías completar otra con buena técnica.</p></div><div><span>FALLO</span><p>Intentas una repetición adicional y no logras completarla.</p></div></div></section>
-    <div class="rir-guide-footer"><span aria-hidden="true">↳</span><p><strong>Llévalo a tu entrenamiento.</strong> Cambia entre RPE y RIR desde “Modo intensidad” en cada ejercicio y sigue el objetivo de tu rutina.</p></div>
-  </div>
