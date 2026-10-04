@@ -8272,7 +8272,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible { 
     document.dispatchEvent(new Event('slab-theme-change'));
     themeToggle.setAttribute('aria-checked', isLight ? 'true' : 'false');
     themeLabel.textContent = isLight ? 'Modo claro' : 'Modo oscuro';
-    themeIcon.textContent  = isLight ? '☀️' : '🌙';
+    themeIcon.textContent  = isLight ? '☀︎' : '⏾';
     try { localStorage.setItem('slab_theme', isLight ? 'light' : 'dark'); } catch(e) {}
   }
   document.getElementById('themeQuickToggle').addEventListener('click', function() { applyTheme(!document.body.classList.contains('light-mode')); });
